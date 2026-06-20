@@ -1,0 +1,11 @@
+<launch>
+        <node pkg="Autonomous_Systems_Project_Team_2" name="robot_cleaner" type="Autonomous_Systems_MS_2_OLR_Team_2.py" output = "screen">
+	<node pkg="Autonomous_Systems_Project_Team_2" name="talker" type="publisher.py" output = "screen">
+         <param name = "id" value = "107"/>
+         <param name = "name" value = "hazem"/>
+         <param name = "age" value = "23.5"/>
+        </node>
+        <node pkg="Autonomous_Systems_Project_Team_2" name="listener" type="subscriber.py" output = "screen"/>
+        <node pkg="rqt_graph" name="rqt_graph" type="rqt_graph" output = "screen"/>
+
+</launch>
